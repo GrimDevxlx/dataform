@@ -22,10 +22,10 @@
 </head>
 <body>
     <form method="post" action="" auto_complete="off">
-     <input type="text" name="username" id="">
-      <span><?php echo $username_error; ?></span>
-      <input type="password" name="" id="">
-      <span><?php echo $password_error; ?></span>
+     <input type="text" name="username">
+      <span><?php if(isset($username_error)) echo $username_error; ?></span>
+      <input type="password" name="password">
+      <span><?php if(isset($password_error)) echo $password_error; ?></span>
       <input type="submit" value="Register">
     </form>
 </body>
